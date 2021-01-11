@@ -24,10 +24,10 @@ void automobile()
 	system ("cls");
 	int secim1;
 	printf("\n\n\tWhich category that you more interest ?");
-	printf("\n\t1. Low-Cost Passenger Car ");
-	printf("\n\t2. Medium-Cost Passenger Car ");
-	printf("\n\t3. Electrical Passenger Car ");
-	printf("\n\t4. Low-Cost SUV Passenger Car ");
+	printf("\n\t1. Low-Cost Passenger Car (80.000tl - 200.000tl)");
+	printf("\n\t2. Medium-Cost Passenger Car (200.000tl - 400.000tl)");
+	printf("\n\t3. Electrical Passenger Car (150.000tl - 300.000tl)");
+	printf("\n\t4. Low-Cost SUV Passenger Car (180.000tl - 300.000tl)");
 	
     printf("\n\n\tENTER YOUR CHOICE:\t");
     scanf("%d", &secim1);
@@ -51,7 +51,7 @@ void automobile()
 
    					fclose(dosya);
    					
-  					printf ("\nPress any key to return to the main menu.");
+  					printf ("\n\nPress any key to return to the main menu.");
 					getch();
 					system ("cls");
     				main ();
@@ -76,7 +76,7 @@ void automobile()
 
    					fclose(dosya);
    					
-  					printf ("\nPress any key to return to the main menu.");
+  					printf ("\n\nPress any key to return to the main menu.");
 					getch();
 					system ("cls");
     				main ();
@@ -101,13 +101,13 @@ void automobile()
 
    					fclose(dosya);
    					
-  					printf ("\nPress any key to return to the main menu.");
+  					printf ("\n\nPress any key to return to the main menu.");
 					getch();
 					system ("cls");
     				main ();
 	}
 	
-	else if (secim1==4)
+	else if (secim1==4) //low cost suv
 	{
 		system ("cls");
                 	FILE * dosya;
@@ -126,7 +126,7 @@ void automobile()
 
    					fclose(dosya);
    					
-  					printf ("\nPress any key to return to the main menu.");
+  					printf ("\n\nPress any key to return to the main menu.");
 					getch();
 					system ("cls");
     				main ();
@@ -135,11 +135,253 @@ void automobile()
 }
 void luxury()
 {
+	system ("cls");
+	int secim2;
+	printf("\n\n\tWhich category that you more interest ?");
+	printf("\n\t1. V.I.P. Cars ");
+	printf("\n\t2. Limousin Cars ");
+	printf("\n\t3. Official / Staff Car ");
 	
+    printf("\n\n\tENTER YOUR CHOICE:\t");
+    scanf("%d", &secim2);
+    
+    if (secim2 == 1) //vip cars
+    {
+    	system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("vip.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
+	}
+	
+	else if (secim2==2) //limuzin
+	{
+		system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("limuzin.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
+	}
+	
+	else if (secim2 == 3)
+	{
+		system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("makam.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
+	}
 }
 
 void performance()
 {
+	system ("cls");
+	int secim3;
+	printf("\n\n\tWhich category that you more interest ?");
+	printf("\n\t1. Classic / Oldschool Cars");
+	printf("\n\t2. European Monsters");
+	printf("\n\t3. American Muscles");
+	printf("\n\t4. Asian-Eastside Tuner Cars");
+	printf("\n\t5. Drag Race Specials (CSR)");
+	printf("\n\t6. Extreme Performance Cars");
+    printf("\n\n\tENTER YOUR CHOICE:\t");
+    scanf("%d", &secim3);
+    
+    if(secim3==1) //classics
+	{
+    		system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("classic.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
+	}
+	
+	else if (secim3==2) //european
+	{
+		system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("european.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
+	}
+	
+	else if (secim3==3) //american muscular
+	{
+		system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("american-muscle.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
+	}
+	
+	else if (secim3==4) //asian tuner
+	{
+		system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("eastside-asian.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
+	}
+		else if (secim3==5) //drag special
+	{
+		system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("drag-special.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
+	}
+		else if (secim3==6) //extreme
+	{
+		system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("extreme.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
+	}
 	
 }
 

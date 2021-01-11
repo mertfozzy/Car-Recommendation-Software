@@ -1,0 +1,48 @@
+Alfa Romeo 145
+
+Audi A1
+Audi A3
+
+BMW 116
+BMW 318
+BMW 320i
+
+Citroen C1 
+Citroen C3 Picasso 
+Citroen C4 / Grand Picasso
+
+Dacia Lodgy
+Dacia Logan
+Dacia Sandero
+
+Ford Fiesta
+Ford Focus
+Ford Fusion
+
+Honda Accord
+Honda Jazz
+
+Hyundai Accent
+Hyundai i20 - i30
+Hyundai Getz
+
+Mitsubishi Colt
+Mitsubishi Lancer
+
+Nissan Note - Micra
+Nissan Pulsar
+
+Opel Astra
+Opel Corsa
+
+Renault Symbol - Clio
+Renault Fluence
+
+Volkswagen Polo
+Volkswagen Golf
+Volkswagen Jetta
+
+
+
+ 
+

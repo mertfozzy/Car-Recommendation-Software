@@ -387,17 +387,140 @@ void performance()
 
 void camper()
 {
+	system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("camper-special.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
 	
 }
 
 void off_road()
 {
-	
+	system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("arazi-4x4-pickup.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
 }
 
 void commercial()
 {
-	
+	system ("cls");
+	int secim4;
+	printf("\n\n\tWhich category that you more interest ?");
+	printf("\n\t1. Minivan for Passsenger");
+	printf("\n\t2. Minivan for Commercial");
+	printf("\n\t3. Minivan for Transporting 19+1");
+	printf("\n\t4. Minibus for Commercial");
+
+    printf("\n\n\tENTER YOUR CHOICE:\t");
+    scanf("%d", &secim4);
+    
+    if(secim4==1) 
+	{
+    		system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("minivan-5.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
+	}
+	else if(secim4==2) 
+	{
+    		system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("minivan-servis.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
+	}
+	else if(secim4==4) 
+	{
+    		system ("cls");
+                	FILE * dosya;
+                	char character;
+   					dosya = fopen("ticari-minibus.txt" , "r");
+   					
+   					if(dosya!=NULL)
+					{
+						character=fgetc(dosya); 
+						while(character!=EOF)
+						{
+							printf("%c", character);
+							character=fgetc(dosya);
+						}
+					}
+
+   					fclose(dosya);
+   					
+  					printf ("\n\nPress any key to return to the main menu.");
+					getch();
+					system ("cls");
+    				main ();
+	}
 }
 
 int main ()
